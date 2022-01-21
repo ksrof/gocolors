@@ -1,6 +1,7 @@
 package gocolors
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -28,13 +29,17 @@ var (
 func Black(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgBlack + bold + content + Reset
+		render := fmt.Sprint(fgBlack, bold, content, Reset)
+		return render
 	case "underline":
-		return fgBlack + underline + content + Reset
+		render := fmt.Sprint(fgBlack, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgBlack + reversed + content + Reset
+		render := fmt.Sprint(fgBlack, reversed, content, Reset)
+		return render
 	default:
-		return fgBlack + content + Reset
+		render := fmt.Sprint(fgBlack, content, Reset)
+		return render
 	}
 }
 
@@ -42,13 +47,17 @@ func Black(content, decoration string) string {
 func Red(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgRed + bold + content + Reset
+		render := fmt.Sprint(fgRed, bold, content, Reset)
+		return render
 	case "underline":
-		return fgRed + underline + content + Reset
+		render := fmt.Sprint(fgRed, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgRed + reversed + content + Reset
+		render := fmt.Sprint(fgRed, reversed, content, Reset)
+		return render
 	default:
-		return fgRed + content + Reset
+		render := fmt.Sprint(fgRed, content, Reset)
+		return render
 	}
 }
 
@@ -56,13 +65,17 @@ func Red(content, decoration string) string {
 func Green(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgGreen + bold + content + Reset
+		render := fmt.Sprint(fgGreen, bold, content, Reset)
+		return render
 	case "underline":
-		return fgGreen + underline + content + Reset
+		render := fmt.Sprint(fgGreen, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgGreen + reversed + content + Reset
+		render := fmt.Sprint(fgGreen, reversed, content, Reset)
+		return render
 	default:
-		return fgGreen + content + Reset
+		render := fmt.Sprint(fgGreen, content, Reset)
+		return render
 	}
 }
 
@@ -70,13 +83,17 @@ func Green(content, decoration string) string {
 func Yellow(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgYellow + bold + content + Reset
+		render := fmt.Sprint(fgYellow, bold, content, Reset)
+		return render
 	case "underline":
-		return fgYellow + underline + content + Reset
+		render := fmt.Sprint(fgYellow, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgYellow + reversed + content + Reset
+		render := fmt.Sprint(fgYellow, reversed, content, Reset)
+		return render
 	default:
-		return fgYellow + content + Reset
+		render := fmt.Sprint(fgYellow, content, Reset)
+		return render
 	}
 }
 
@@ -84,13 +101,17 @@ func Yellow(content, decoration string) string {
 func Blue(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgBlue + bold + content + Reset
+		render := fmt.Sprint(fgBlue, bold, content, Reset)
+		return render
 	case "underline":
-		return fgBlue + underline + content + Reset
+		render := fmt.Sprint(fgBlue, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgBlue + reversed + content + Reset
+		render := fmt.Sprint(fgBlue, reversed, content, Reset)
+		return render
 	default:
-		return fgBlue + content + Reset
+		render := fmt.Sprint(fgBlue, content, Reset)
+		return render
 	}
 }
 
@@ -98,13 +119,17 @@ func Blue(content, decoration string) string {
 func Magenta(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgMagenta + bold + content + Reset
+		render := fmt.Sprint(fgMagenta, bold, content, Reset)
+		return render
 	case "underline":
-		return fgMagenta + underline + content + Reset
+		render := fmt.Sprint(fgMagenta, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgMagenta + reversed + content + Reset
+		render := fmt.Sprint(fgMagenta, reversed, content, Reset)
+		return render
 	default:
-		return fgMagenta + content + Reset
+		render := fmt.Sprint(fgMagenta, content, Reset)
+		return render
 	}
 }
 
@@ -112,13 +137,17 @@ func Magenta(content, decoration string) string {
 func Cyan(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgCyan + bold + content + Reset
+		render := fmt.Sprint(fgCyan, bold, content, Reset)
+		return render
 	case "underline":
-		return fgCyan + underline + content + Reset
+		render := fmt.Sprint(fgCyan, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgCyan + reversed + content + Reset
+		render := fmt.Sprint(fgCyan, reversed, content, Reset)
+		return render
 	default:
-		return fgCyan + content + Reset
+		render := fmt.Sprint(fgCyan, content, Reset)
+		return render
 	}
 }
 
@@ -126,12 +155,16 @@ func Cyan(content, decoration string) string {
 func White(content, decoration string) string {
 	switch strings.ToLower(decoration) {
 	case "bold":
-		return fgWhite + bold + content + Reset
+		render := fmt.Sprint(fgWhite, bold, content, Reset)
+		return render
 	case "underline":
-		return fgWhite + underline + content + Reset
+		render := fmt.Sprint(fgWhite, underline, content, Reset)
+		return render
 	case "reversed":
-		return fgWhite + reversed + content + Reset
+		render := fmt.Sprint(fgWhite, reversed, content, Reset)
+		return render
 	default:
-		return fgWhite + content + Reset
+		render := fmt.Sprint(fgWhite, content, Reset)
+		return render
 	}
 }
