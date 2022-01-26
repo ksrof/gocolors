@@ -56,21 +56,29 @@ func Color(content, color, decoration string) string {
 		return Cyan(content, decoration)
 	case "white":
 		return White(content, decoration)
-	case "bright-black":
+	}
+
+	return ""
+}
+
+// BrightColor returns a string rendered with the given color.
+func BrightColor(content, color, decoration string) string {
+	switch strings.ToLower(color) {
+	case "black":
 		return BrightBlack(content, decoration)
-	case "bright-red":
+	case "red":
 		return BrightRed(content, decoration)
-	case "bright-green":
+	case "green":
 		return BrightGreen(content, decoration)
-	case "bright-yellow":
+	case "yellow":
 		return BrightYellow(content, decoration)
-	case "bright-blue":
+	case "blue":
 		return BrightBlue(content, decoration)
-	case "bright-magenta":
+	case "magenta":
 		return BrightMagenta(content, decoration)
-	case "bright-cyan":
+	case "cyan":
 		return BrightCyan(content, decoration)
-	case "bright-white":
+	case "white":
 		return BrightWhite(content, decoration)
 	}
 
