@@ -1,5 +1,5 @@
 # gocolors
-Gocolors is a color library for Go (golang), which works along the standard library `fmt` and `log` packages. It can render text in a wide variety of colors giving your programs a much more outstanding output.
+Color library for `Golang` which works along the standard library `fmt` and `log` packages. It can render text in a wide variety of colors giving your programs a much more outstanding output.
 
 ![Gocolors output](https://github.com/ksrof/gocolors/blob/main/images/gocolors_output.png)
 ## Roadmap
